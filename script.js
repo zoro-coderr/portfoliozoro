@@ -374,9 +374,10 @@ focusableElements.forEach(element => {
 // Console greeting
 console.log(`
 🚀 Welcome to Aman Kumar's Portfolio!
-💼 Aspiring Developer & Data Analyst
-📧 Contact: prasaddhruv32@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/dhruv-prasad-298160302
+💼 Computer Science Student | Java Developer
+📧 Contact: amankr.21797@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/aman-kumar
+📱 GitHub: @zoro-coderr
 
 This portfolio was built with:
 - HTML5 & CSS3
