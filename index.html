@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar - Portfolio | Aspiring Developer & Data Analyst</title>
+    <meta name="description" content="Portfolio of Aman Kumar - B.Tech student, aspiring developer and data analyst with expertise in web development, data analysis, and visualization.">
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- TailwindCSS Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            },
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="font-inter bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary-600 dark:text-primary-400">Aman Kumar</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#achievements" class="nav-link">Achievements</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Dark Mode Toggle -->
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button id="mobileMenuButton" class="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#achievements" class="mobile-nav-link">Achievements</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+                    Hi, I'm <span class="text-primary-600 dark:text-primary-400">Aman Kumar</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+                    Aspiring Developer | Data Analyst
+                </p>
+                <p class="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
+                    Motivated second-year B.Tech student with strong academic background and skills in web development and data analysis. 
+                    Eager to apply knowledge in practical settings and contribute to innovative projects.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-code mr-2"></i>
+                        View My Projects
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="500" class="mt-16">
+                <a href="#about" class="inline-block animate-bounce">
+                    <i class="fas fa-chevron-down text-2xl text-primary-600 dark:text-primary-400"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    A passionate student with a strong foundation in technology and a keen interest in software development.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Education Timeline -->
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-900 dark:text-white">Education Background</h3>
+                    <div class="space-y-6">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Bachelor's in Technology (B.Tech)</h4>
+                                <p class="text-primary-600 dark:text-primary-400">Galgotias University</p>
+                                <p class="text-gray-600 dark:text-gray-400">Ongoing (2023-2027)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Intermediate (PCM)</h4>
+                                <p class="text-primary-600 dark:text-primary-400">DAV Public School Hehal, Ranchi</p>
+                                <p class="text-gray-600 dark:text-gray-400">Completed 2023 | 77%</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Matriculation</h4>
+                                <p class="text-primary-600 dark:text-primary-400">DAV Public School Hehal, Ranchi</p>
+                                <p class="text-gray-600 dark:text-gray-400">Completed 2021 | 83%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-900 dark:text-white">Technical Skills</h3>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-medium mb-4 text-gray-900 dark:text-white">Programming & Development</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="skill-item">
+                                <i class="fab fa-html5 text-orange-500"></i>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square text-yellow-500"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code text-blue-500"></i>
+                                <span>C/C++</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python text-green-500"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-medium mb-4 text-gray-900 dark:text-white">Data Analysis</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="skill-item">
+                                <i class="fas fa-database text-blue-600"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-bar text-purple-500"></i>
+                                <span>Power BI</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-file-excel text-green-600"></i>
+                                <span>Excel</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line text-red-500"></i>
+                                <span>Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-medium mb-4 text-gray-900 dark:text-white">Soft Skills</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">Observation</span>
+                            <span class="skill-tag">Decision Making</span>
+                            <span class="skill-tag">Multi-tasking</span>
+                            <span class="skill-tag">Graphic Design</span>
+                            <span class="skill-tag">Video Editing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    A showcase of my work in web development and data analysis.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Razorpay Clone -->
+                <div data-aos="fade-up" data-aos-delay="100" class="project-card">
+                    <div class="project-header">
+                        <i class="fab fa-css3-alt text-3xl text-blue-500"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Razorpay Clone</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Frontend Development</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        Built a front-end clone of Razorpay's landing page using TailwindCSS, enhancing design sense and layout management skills through responsive UI.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-tag">TailwindCSS</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <a href="https://github.com/prasad-dhruv09/Razorpay-using-tailwindcss" target="_blank" class="project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub
+                    </a>
+                </div>
+
+                <!-- Food Recipe Project -->
+                <div data-aos="fade-up" data-aos-delay="200" class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-utensils text-3xl text-orange-500"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Food Recipe App</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Web Application</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        Developed a responsive Food Recipe web application using HTML, CSS, and JavaScript, integrating a third-party API to fetch and display dynamic recipe data with search functionality.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API Integration</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <a href="https://github.com/prasad-dhruv09/Food-Recipe-Project" target="_blank" class="project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub
+                    </a>
+                </div>
+
+                <!-- Ola Data Analysis -->
+                <div data-aos="fade-up" data-aos-delay="300" class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-car text-3xl text-green-500"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Ola Ride Analysis</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Data Analysis</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        Identified the reason & trends for ride cancellation. Cleaned and processed data from multiple sources, applied SQL queries and visualized trends using Power BI. Reduced cancellation rate by 10%.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <a href="https://github.com/prasad-dhruv09/Data-Analysis-Dashboard" target="_blank" class="project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub
+                    </a>
+                </div>
+
+                <!-- Apollo Hospital Dashboard -->
+                <div data-aos="fade-up" data-aos-delay="400" class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-hospital text-3xl text-red-500"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Apollo Hospital Dashboard</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Business Intelligence</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        Patient and Billing Insights Dashboard. Cleaned and processed data from Excel sources, visualized trends using Power BI. Optimized bed usage by 11% and improved billing transparency.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-tag">Excel</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Dashboard</span>
+                    </div>
+                    <a href="https://github.com/prasad-dhruv09/Data-Analysis-Dashboard-2.git" target="_blank" class="project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub
+                    </a>
+                </div>
+
+                <!-- Amazon Sales Analysis -->
+                <div data-aos="fade-up" data-aos-delay="500" class="project-card">
+                    <div class="project-header">
+                        <i class="fab fa-amazon text-3xl text-yellow-600"></i>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Amazon Sales Analysis</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Python Analytics</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        Analyzed Amazon sales data using Python, performing data cleaning, visualization, and trend analysis. Used Pandas and Matplotlib to identify sales patterns and customer behavior insights.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <a href="https://github.com/prasad-dhruv09/Data-Analysis-Python.git" target="_blank" class="project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Achievements & Certifications</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Professional certifications and achievements that demonstrate my commitment to continuous learning.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Microsoft & LinkedIn - Software Development -->
+                <div data-aos="fade-up" data-aos-delay="100" class="achievement-card">
+                    <div class="achievement-icon bg-blue-100 dark:bg-blue-900">
+                        <i class="fab fa-microsoft text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Career Essentials in Software Development</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Microsoft & LinkedIn</p>
+                    <span class="achievement-year">2023</span>
+                </div>
+
+                <!-- Microsoft & LinkedIn - Data Analysis -->
+                <div data-aos="fade-up" data-aos-delay="200" class="achievement-card">
+                    <div class="achievement-icon bg-green-100 dark:bg-green-900">
+                        <i class="fab fa-linkedin text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Career Essentials in Data Analysis</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Microsoft & LinkedIn</p>
+                    <span class="achievement-year">2023</span>
+                </div>
+
+                <!-- TATA Data Visualization -->
+                <div data-aos="fade-up" data-aos-delay="300" class="achievement-card">
+                    <div class="achievement-icon bg-purple-100 dark:bg-purple-900">
+                        <i class="fas fa-chart-pie text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Data Visualisation</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">TATA</p>
+                    <span class="achievement-year">2024-25</span>
+                </div>
+
+                <!-- Deloitte Simulation -->
+                <div data-aos="fade-up" data-aos-delay="400" class="achievement-card">
+                    <div class="achievement-icon bg-orange-100 dark:bg-orange-900">
+                        <i class="fas fa-briefcase text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Data Analytics Job Simulation</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Deloitte</p>
+                    <span class="achievement-year">2025</span>
+                </div>
+
+                <!-- Academic Excellence -->
+                <div data-aos="fade-up" data-aos-delay="500" class="achievement-card">
+                    <div class="achievement-icon bg-yellow-100 dark:bg-yellow-900">
+                        <i class="fas fa-graduation-cap text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Academic Excellence</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Matriculation - 92.4%</p>
+                    <span class="achievement-year">2021</span>
+                </div>
+
+                <!-- High School Achievement -->
+                <div data-aos="fade-up" data-aos-delay="600" class="achievement-card">
+                    <div class="achievement-icon bg-indigo-100 dark:bg-indigo-900">
+                        <i class="fas fa-award text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">PCM Excellence</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Intermediate - 86.4%</p>
+                    <span class="achievement-year">2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Let's connect and discuss opportunities to work together.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-900 dark:text-white">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 dark:text-white">Email</h4>
+                                <a href="mailto:prasaddhruv32@gmail.com" class="text-primary-600 dark:text-primary-400 hover:underline">
+                                    prasaddhruv32@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 dark:text-white">Phone</h4>
+                                <a href="tel:+918825276700" class="text-primary-600 dark:text-primary-400 hover:underline">
+                                    +91 8825276700
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 dark:text-white">Location</h4>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    Devi Mandap Road, Ranchi, Jharkhand - 834005
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 dark:text-white">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/dhruv-prasad-298160302" target="_blank" class="text-primary-600 dark:text-primary-400 hover:underline">
+                                    Connect on LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-900 dark:text-white">Send a Message</h3>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Full Name *
+                            </label>
+                            <input type="text" id="name" name="name" required 
+                                   class="form-input" 
+                                   placeholder="Your full name">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Email Address *
+                            </label>
+                            <input type="email" id="email" name="email" required 
+                                   class="form-input" 
+                                   placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Subject *
+                            </label>
+                            <input type="text" id="subject" name="subject" required 
+                                   class="form-input" 
+                                   placeholder="What's this about?">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Message *
+                            </label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="form-input" 
+                                      placeholder="Your message..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Dhruv Prasad</h3>
+                    <p class="text-gray-400 mb-4">
+                        Aspiring Developer & Data Analyst passionate about creating innovative solutions and turning data into insights.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/dhruv-prasad-298160302" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/prasad-dhruv09" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:prasaddhruv32@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#achievements" class="text-gray-400 hover:text-white transition-colors">Achievements</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i> prasaddhruv32@gmail.com</p>
+                        <p><i class="fas fa-phone mr-2"></i> +91 8825276700</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Ranchi, Jharkhand</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2025 Dhruv Prasad. All rights reserved. Built with ❤️ using TailwindCSS.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
