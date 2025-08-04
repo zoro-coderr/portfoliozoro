@@ -138,7 +138,7 @@ createScrollIndicator();
 // Form handling
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+    //e.preventDefault();
     
     // Get form data
     const formData = new FormData(this);
