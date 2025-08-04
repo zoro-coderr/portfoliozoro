@@ -450,65 +450,55 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div data-aos="fade-left">
-                    <h3 class="text-2xl font-semibold mb-8 text-gray-900 dark:text-white">Send a Message</h3>
-                    
-                    <form id="contactForm"  action="https://formspree.io/f/xjkoeqrg" 
-                             method="POST" class="space-y-6">
+             <form id="contactForm" action="https://formspree.io/f/xjkoeqrg" 
+      method="POST" class="space-y-6">
 
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                Full Name *
-                            </label>
-                          <input type="text" id="name" name="name" required
-       class="form-input w-full p-3 rounded-md bg-white text-black 
-              dark:bg-gray-800 dark:text-white" 
-       placeholder="Your full name" maxlength="50">
+  <div>
+    <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+      Full Name *
+    </label>
+    <input type="text" id="name" name="name" required maxlength="50"
+           class="form-input w-full p-3 rounded-md bg-white text-black 
+                  dark:bg-gray-800 dark:text-white" 
+           placeholder="Your full name">
+  </div>
 
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                Email Address *
-                            </label>
-                          <input type="email" id="email" name="email" required maxlength="50"
-       class="form-input w-full p-3 rounded-md bg-white text-black 
-              dark:bg-gray-800 dark:text-white" 
-       placeholder="your.email@example.com">
+  <div>
+    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+      Email Address *
+    </label>
+    <input type="email" id="email" name="email" required maxlength="50"
+           class="form-input w-full p-3 rounded-md bg-white text-black 
+                  dark:bg-gray-800 dark:text-white" 
+           placeholder="your.email@example.com">
+  </div>
 
-                        </div>
-                        
-                        <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                Subject *
-                            </label>
-                           <input type="text" id="subject" name="subject" required maxlength="100"
-       class="form-input w-full p-3 rounded-md bg-white text-black 
-              dark:bg-gray-800 dark:text-white" 
-       placeholder="What's this about?">
+  <div>
+    <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+      Subject *
+    </label>
+    <input type="text" id="subject" name="subject" required maxlength="100"
+           class="form-input w-full p-3 rounded-md bg-white text-black 
+                  dark:bg-gray-800 dark:text-white" 
+           placeholder="What's this about?">
+  </div>
 
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                Message *
-                            </label>
-                            <textarea id="message" name="message" rows="5" required maxlength="250"
-          class="form-input w-full p-3 rounded-md bg-white text-black 
-                 dark:bg-gray-800 dark:text-white" 
-          placeholder="Your message..."></textarea>
+  <div>
+    <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+      Message *
+    </label>
+    <textarea id="message" name="message" rows="5" required maxlength="250"
+              class="form-input w-full p-3 rounded-md bg-white text-black 
+                     dark:bg-gray-800 dark:text-white" 
+              placeholder="Your message..."></textarea>
+  </div>
 
-                        </div>
-                        
-                        <button type="submit" class="btn-primary w-full">
-                            <i class="fas fa-paper-plane mr-2"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+  <button type="submit" class="btn-primary w-full">
+    <i class="fas fa-paper-plane mr-2"></i>
+    Send Message
+  </button>
+</form>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12">
